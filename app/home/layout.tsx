@@ -1,4 +1,5 @@
 import ResponsiveAppBar from "@/ui/navbar/Navbar";
+import Container from "@mui/material/Container";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -6,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="w-full">
         <ResponsiveAppBar />
       </div>
-      <div className="grow p-1 md:overflow-y-auto">{children}</div>
+      <Container maxWidth="xl">{children}</Container>
     </div>
   );
 }
