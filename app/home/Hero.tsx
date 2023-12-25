@@ -13,7 +13,7 @@ const Hero = () => {
         >
           Senior Fullstack Developer
         </h6>
-        <h6 className={`m-0 ${abel.className} text-[16px] md:text-[20px] `}>
+        <h6 className={`m-0 ${abel.className} text-[16px] md:text-[26px] `}>
           I love what I do, and always try doing it better.
         </h6>
       </header>
