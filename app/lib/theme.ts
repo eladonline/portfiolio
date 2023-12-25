@@ -1,14 +1,37 @@
 import { createTheme } from "@mui/material/styles";
-import { Roboto } from "next/font/google";
-import { Abel, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
-export const abel = Abel({ weight: ["400"], subsets: ["latin"] });
 export const inter = Inter({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
 
+declare module "@mui/material/styles/createTheme" {
+  interface ThemeOptions {
+    breakpoints: {
+      values: {
+        xs: number;
+        sm: number;
+        md: number;
+        lg: number;
+        xl: number;
+        xl2: number;
+      };
+    };
+  }
+}
+
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xl2: 1536,
+    },
+  },
   typography: {
     fontFamily: inter.style.fontFamily,
   },

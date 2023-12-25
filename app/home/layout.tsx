@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="w-full">
         <ResponsiveAppBar />
       </div>
-      <Container maxWidth="xl">{children}</Container>
+      <Container maxWidth="lg">{children}</Container>
     </div>
   );
 }

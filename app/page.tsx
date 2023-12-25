@@ -1,8 +1,10 @@
 import HomeLayout from "./home/layout";
 import Home from "./home/page";
 
-export default () => (
+const HomePage = () => (
   <HomeLayout>
     <Home />
   </HomeLayout>
 );
+
+export default HomePage;

@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" >
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box sx={{ mr: 3 }}>
             <Tooltip title="Elad ben-aderet">
