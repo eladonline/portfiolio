@@ -2,6 +2,7 @@ import { inter } from "@/ui/fonts";
 import PoweredBy from "@/home/PoweredBy";
 import Hero from "@/home/Hero";
 import Bio from "@/home/Bio";
+import Projects from "@/home/Projects";
 
 export default async function Page() {
   return (
@@ -10,8 +11,8 @@ export default async function Page() {
     >
       <PoweredBy />
       <Hero />
-
       <Bio />
+      <Projects />
     </main>
   );
 }
