@@ -12,7 +12,7 @@ const Bio = () => {
       }
     >
       <Grid2 justifyContent={"space-around"} rowSpacing={5} container>
-        <Grid2 xs={12} md={5}>
+        <Grid2 xs={12} lg={5}>
           <Paper
             sx={{ padding: "30px 50px", height: "752px" }}
             className={"flex flex-col items-center w-full gap-[40px]"}
@@ -85,7 +85,7 @@ const Bio = () => {
             </section>
           </Paper>
         </Grid2>
-        <Grid2 xs={12} md={5}>
+        <Grid2 xs={12} lg={5}>
           <Paper
             sx={{ padding: "30px 50px", height: "752px" }}
             className={"flex flex-col items-center w-full gap-[40px]"}
@@ -148,7 +148,7 @@ const Bio = () => {
       {/*Blue background*/}
       <div
         className={
-          "w-full top-[630px] sm:top-[590px]  md:top-[500px]  lg:top-[530px] absolute h-[1700px] md:h-[900px] z-[-1] bg-gradient-to-b from-blue-500  to-white"
+          "w-full top-[630px] sm:top-[590px]  md:top-[500px]  lg:top-[530px] absolute h-[1700px] lg:h-[900px] z-[-1] bg-gradient-to-b from-blue-500  to-white"
         }
       />
     </section>

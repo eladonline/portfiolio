@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
@@ -12,10 +11,11 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
+import { Breakpoint } from "@mui/system";
 
 const pages = ["Products", "Pricing", "Blog"];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar({ maxWidth }: { maxWidth: Breakpoint }) {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
 
@@ -32,8 +32,8 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="lg">
+    <AppBar position="sticky" >
+      <Container maxWidth={maxWidth}>
         <Toolbar disableGutters>
           <Box sx={{ mr: 3 }}>
             <Tooltip title="Elad ben-aderet">

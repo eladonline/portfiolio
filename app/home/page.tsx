@@ -3,6 +3,7 @@ import PoweredBy from "@/home/PoweredBy";
 import Hero from "@/home/Hero";
 import Bio from "@/home/Bio";
 import Projects from "@/home/Projects";
+import Footer from "@/home/Footer";
 
 export default async function Page() {
   return (
