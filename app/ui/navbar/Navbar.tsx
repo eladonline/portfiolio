@@ -13,26 +13,17 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import { Breakpoint } from "@mui/system";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = [];
 
 function ResponsiveAppBar({ maxWidth }: { maxWidth: Breakpoint }) {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky">
       <Container maxWidth={maxWidth}>
         <Toolbar disableGutters>
           <Box sx={{ mr: 3 }}>
