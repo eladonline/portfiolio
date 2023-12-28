@@ -1,8 +1,26 @@
+"use client";
 import Paper from "@mui/material/Paper";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import ListItem from "@mui/material/ListItem";
 import List from "@mui/material/List";
+import { useState } from "react";
+
+const PaperComponent = ({ children }: { children: React.ReactNode }) => {
+  const [elevation, setElevation] = useState<number>(3);
+
+  return (
+    <Paper
+      onMouseOver={() => setElevation(16)}
+      onMouseOut={() => setElevation(3)}
+      sx={{ padding: "30px 50px", height: "752px" }}
+      className={"flex flex-col items-center w-full gap-[40px]"}
+      elevation={elevation}
+    >
+      {children}
+    </Paper>
+  );
+};
 
 const Bio = () => {
   return (
@@ -13,11 +31,7 @@ const Bio = () => {
     >
       <Grid2 justifyContent={"space-around"} rowSpacing={5} container>
         <Grid2 xs={12} lg={5}>
-          <Paper
-            sx={{ padding: "30px 50px", height: "752px" }}
-            className={"flex flex-col items-center w-full gap-[40px]"}
-            elevation={3}
-          >
+          <PaperComponent>
             <section className={"flex flex-col items-center w-full gap-[20px]"}>
               <div
                 className={
@@ -83,14 +97,10 @@ const Bio = () => {
                 Agile.
               </Typography>
             </section>
-          </Paper>
+          </PaperComponent>
         </Grid2>
         <Grid2 xs={12} lg={5}>
-          <Paper
-            sx={{ padding: "30px 50px", height: "752px" }}
-            className={"flex flex-col items-center w-full gap-[40px]"}
-            elevation={3}
-          >
+          <PaperComponent>
             <section className={"flex flex-col items-center w-full gap-[20px]"}>
               <div
                 className={
@@ -141,7 +151,7 @@ const Bio = () => {
                 Sold licenses to a very famous and big companies
               </Typography>
             </section>
-          </Paper>
+          </PaperComponent>
         </Grid2>
       </Grid2>
 

@@ -12,8 +12,9 @@ const PoweredBy = () => {
           alignItems={"center"}
           container
           rowGap={{ xs: 5, sm: 3 }}
+          columns={{ xs: 10 }}
         >
-          <Grid2 container justifyContent={"center"} xs={6} md={3}>
+          <Grid2 container justifyContent={"center"} xs={4} md={2}>
             <div
               className={
                 "w-[70%] bg-[url('/next.svg')] h-[80px] lg:h-[60px] bg-no-repeat bg-contain bg-center"
@@ -21,8 +22,8 @@ const PoweredBy = () => {
             />
           </Grid2>
           <Grid2
-            xs={6}
-            md={3}
+            xs={4}
+            md={2}
             className={
               "bg-[url('/tailwindcss.svg')]  h-[80px] lg:h-[60px] bg-no-repeat bg-cover bg-center"
             }
@@ -31,8 +32,8 @@ const PoweredBy = () => {
             className={
               "bg-[url('/materialui.png')]  h-[80px] lg:h-[60px] bg-no-repeat bg-cover bg-center"
             }
-            xs={6}
-            md={3}
+            xs={4}
+            md={2}
           />
         </Grid2>
       </Box>
