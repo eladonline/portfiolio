@@ -1,11 +1,10 @@
-import { abel, inter } from "@/ui/fonts";
+import { abel } from "@/ui/fonts";
 import Container from "@mui/material/Container";
 import { Breakpoint } from "@mui/system";
 import Typography from "@mui/material/Typography";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
+import Image from "next/image";
 
 const linkedin = {
   source: "https://www.linkedin.com/in/elad-ben-aderet-b29386139",
@@ -35,7 +34,7 @@ const Footer = ({ maxWidth }: { maxWidth: Breakpoint }) => {
               spacing={4}
             >
               <Box className={iconsStyle}>
-                <img
+                <Image
                   alt={linkedin.title}
                   height={50}
                   width={50}
@@ -44,7 +43,6 @@ const Footer = ({ maxWidth }: { maxWidth: Breakpoint }) => {
               </Box>
               <a className={"text-white"} href={linkedin.source}>
                 <Typography color={"white"}>{linkedin.title}</Typography>
-
               </a>
             </Grid2>
 
@@ -53,7 +51,7 @@ const Footer = ({ maxWidth }: { maxWidth: Breakpoint }) => {
               spacing={4}
             >
               <Box className={`top-[5px] ${iconsStyle} relative`}>
-                <img
+                <Image
                   alt={email.title}
                   height={50}
                   width={50}

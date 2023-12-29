@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ./app/**/*.tsx --fix & next lint "
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
