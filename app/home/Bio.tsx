@@ -79,7 +79,7 @@ const Bio = () => {
 
               <Typography textAlign={"center"} variant={"body1"}>
                 React-Hooks, Redux, Tailwind/Styled-Components/Scss, Antd/MUI,
-                Javascript, NodeJS, Express, Elasticsearch, Jest/Mocha/Chai
+                Javascript, NodeJS, ExpressJS, Elasticsearch, Jest/Mocha/Chai
               </Typography>
             </section>
 
@@ -130,6 +130,7 @@ const Bio = () => {
                 A SPA to configure and visualize site traffic.
               </Typography>
               <List disablePadding subheader={"In the app:"}>
+                <ListItem>Login with privilege system.</ListItem>
                 <ListItem>Dashboards with statistics graphs.</ListItem>
                 <ListItem>Responsive(onType) advanced forms.</ListItem>
                 <ListItem>

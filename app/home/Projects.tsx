@@ -42,7 +42,7 @@ const Projects = () => {
             <Grid2 key={title} xs={9} sm={6} lg={4} xl={3}>
               <a className={" text-amber-200 "} target={"_blank"} href={source}>
                 <Box
-                  className={`bg-amber-700 transition duration-300 group hover:bg-amber-900 text-center p-4 pt-[40px] rounded-[5px] flex flex-col cursor-pointer w-full h-[150px]  items-center`}
+                  className={`bg-amber-500 transition duration-300 group hover:bg-amber-700 text-center p-4 pt-[40px] rounded-[5px] flex flex-col cursor-pointer w-full h-[150px]  items-center`}
                   gap={1}
                 >
                   <Typography
