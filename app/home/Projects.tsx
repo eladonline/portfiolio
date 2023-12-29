@@ -34,7 +34,7 @@ const Projects = () => {
         rowSpacing={6}
         columnSpacing={6}
         className={"p-[30px]"}
-        justifyContent={{xs:"center",md:"space-between"}}
+        justifyContent={{ xs: "center", md: "space-between" }}
         container
       >
         {projectsMeta.map(({ title, source, desc }) => {
