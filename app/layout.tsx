@@ -12,6 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>Elad`s portfolio</title>
       </head>
       <body className={abel.className}>
         <ThemeRegistry options={{ key: "mui-theme" }}>{children}</ThemeRegistry>
