@@ -123,7 +123,7 @@ const Bio = () => {
                 variant={"body1"}
                 textAlign={"center"}
               >
-                KWAAP <br /> (Kubernetes Web App Protection)
+                <u>KWAAP</u> <br /> (Kubernetes Web App Protection)
               </Typography>
 
               <Typography variant={"body1"}>
@@ -144,11 +144,11 @@ const Bio = () => {
                 className={"text-blue-600"}
                 variant={"body1"}
               >
-                Project achievement
+                <u>Project achie</u>vement
               </Typography>
 
               <Typography textAlign={"center"} variant={"body1"}>
-                Sold licenses to a very famous and big companies
+                Succeeded to production and sold licenses
               </Typography>
             </section>
           </PaperComponent>
