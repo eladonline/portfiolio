@@ -13,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import { Breakpoint } from "@mui/system";
 
-const pages = [];
+const pages = ["Elad Ben-Aderet"];
 
 function ResponsiveAppBar({ maxWidth }: { maxWidth: Breakpoint }) {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
